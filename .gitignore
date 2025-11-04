@@ -1,0 +1,13 @@
+# Ignorar pastas e arquivos do Visual Studio
+.vs/
+*.db
+*.db-shm
+*.db-wal
+*.suo
+*.user
+*.cache
+/bin/
+/obj/
+CopilotIndices/
+FileContentIndex/
+v17/
