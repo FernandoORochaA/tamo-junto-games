@@ -14,4 +14,8 @@
     --font-primaria-titulos: 'Audiowide',sans-serif;
     --font-secundaria-textos: 'Montserrat', sans-serif;
 }
+
+body {
+    background-color: var(--cor-fundo);
+}
    
