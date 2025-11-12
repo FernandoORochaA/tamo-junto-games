@@ -15,7 +15,147 @@
     --font-secundaria-textos: 'Montserrat', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: var(--font-secundaria-textos);
+}
+
+.login {
+    padding: 5% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 82px;
+}
+
+.login_inicio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 500px;
+}
+
+.login_titulo {
+    font-family: var(--font-primaria-titulos);
+    color: var(--cor-texto-principal);
+    font-size: 2.5rem;
+}
+
+.login_acessar {
+    font-family: var(--font-primaria-titulos);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.login_acessar_subtitulo {
+    font-family: var(--font-primaria-titulos);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.login_acesso_entrar {
+    font-family: var(--font-secundaria-textos);
+    background-color: var(--cor-primaria-botoes-links);
+    color: var(--cor-texto-principal);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    border: 2px solid var(--cor-secundaria-hover-bordas);
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 500px;
+    padding: 10.5px 0;
+    text-decoration: none;
+}
+
+.login_acesso_entrar::placeholder {
+    color: var(--cor-texto-principal);
+    opacity: 1;
+    font-family: var(--font-secundaria-textos);
+    font-weight: 500px;
+}
+
+.login_acesso_confirmar {
+    font-family: var(--font-secundaria-textos);
+    background-color: var(--cor-primaria-botoes-links);
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-secundaria-hover-bordas);
+    border-radius: 2px;
+    width: 20%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5.5px 0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.login_acesso_confirmar:hover {
+    filter: brightness(1.15); /*Altera o brilho do elemento acima de 1 fica mais claro, abaixo mais escuro */
+    transform: scale(1.03); /*Aumenta ou diminui o tamanho do elemento */
+    box-shadow: 0 0 8px rgba(0, 207, 255, 0.4); /*Adiciona uma sombra ao redor do elemento - desloc X desloc Y desfoque cor */
+}
+
+.login_acesso_confirmar:active {
+    transform: scale(0.95); /*Reduz o tamanho do elemento ao clicar */
+    filter: brightness(1.25); /*Aumenta o brilho do elemento ao clicar */
+    transition: transform 0.1s ease, filter 0.1s ease; /*Definindo a transição dos elementos acima (transform e filter)*/
+}
+
+.criar_conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.criar_login {
+    font-family: var(--font-secundaria-textos);
+    background-color: var(--cor-primaria-botoes-links);
+    color: var(--cor-texto-principal);
+    border: 2px solid var(--cor-secundaria-hover-bordas);
+    border-radius: 2px;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500px;
+    padding: 10.5px 0;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.criar_login:hover {
+    filter: brightness(1.15);
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(0, 207, 255, 0.4);
+}
+
+.criar_login:active {
+    transform: scale(0.95); /*Reduz o tamanho do elemento ao clicar */
+    filter: brightness(1.25); /*Aumenta o brilho do elemento ao clicar */
+    transition: transform 0.1s ease, filter 0.1s ease; /*Definindo a transição dos elementos acima (transform e filter)*/
 }
    
