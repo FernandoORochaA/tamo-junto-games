@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     gap: 28px;
     text-align:center;
+    position: relative;
     z-index: 10; /*Deixar na frente das imagens*/
 }
 
@@ -167,9 +168,112 @@ body {
     transition: transform 0.1s ease, filter 0.1s ease; /* Definindo a transição dos elementos acima (transform e filter) */
 }
 
+.cadastro {
+    display:grid;
+    grid-template-columns: 22% 1fr 22%; /*Laterais fixas com tamanho definido e o meio 1fr ele pega a fração de espaço que eu tenho disponivel*/
+    height: 100vh;
+    align-items: center;
+    position: relative
+}
+
+.cadastro_inicio {
+    grid-column: 2; /*Deixa no meio*/
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align:center;
+    position: relative;
+    z-index: 10; /*Deixar na frente das imagens*/
+}
+
+.cadastro_titulo {
+    font-family: var(--font-primaria-titulos);
+    color: var(--cor-texto-principal);
+    font-size: 2.5rem;
+}
+
+.formulario {
+    font-family: var(--font-primaria-titulos);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.formulario_criar {
+    font-family: var(--font-secundaria-textos);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    border: 2px solid var(--cor-primaria-botoes-links);
+    width: 20%;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 500px;
+    padding: 10.5px 0;
+    text-decoration: none;
+    cursor: text;
+}
+
+.formulario_criar::placeholder {
+    color: var(--cor-texto-principal);
+    opacity: 1;
+    font-family: var(--font-secundaria-textos);
+    font-weight: 500px;
+}
+
+.formulario_criar:focus {
+    outline: none; /* Remover o contorno branco quando selecionado */
+    border-color: var(--cor-secundaria-hover-bordas); /* Escolha nova cor de borda */
+    box-shadow: 0 0 6px rgba(0, 207, 255, 0.4);
+    transition: 0.2 ease;
+}
+
+.formulario_criar_botao {
+    font-family: var(--font-secundaria-textos);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-primaria-botoes-links);
+    border-radius: 2px;
+    width: 10%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5.5px 0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.formulario_criar_botao:hover {
+    filter: brightness(1.15); /*Altera o brilho do elemento acima de 1 fica mais claro, abaixo mais escuro */
+    transform: scale(1.03); /*Aumenta ou diminui o tamanho do elemento */
+    box-shadow: 0 0 8px rgba(0, 207, 255, 0.4); /*Adiciona uma sombra ao redor do elemento - desloc X desloc Y desfoque cor */
+}
+
+.formulario_criar_botao:active {
+    transform: scale(0.95); /*Reduz o tamanho do elemento ao clicar */
+    filter: brightness(1.25); /*Aumenta o brilho do elemento ao clicar */
+    transition: transform 0.1s ease, filter 0.1s ease; /*Definindo a transição dos elementos acima (transform e filter)*/
+}
+
+
 .logo_img {
     grid-column: 2;
     width: 120px;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+}
+
+.logo_img_formulario {
+    grid-column: 2;
+    width: 55px;
     margin: 0 auto;
     display: block;
     z-index: 10;
@@ -182,6 +286,7 @@ body {
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Nao repete a imagem */
     position: relative; /* Ncessario para que overlay funcione corretamente */
+    z-index: 0;
 }
 
 .login_img::after {
@@ -199,4 +304,52 @@ body {
 
 .login_img--left {
     background-image: url("assets/img/ImagemEsquerda.png"); /* Quando usado div ao inves de img, indica a imagem aqui */
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+.termos input[type="checkbox"] {
+    accent-color: var(--cor-primaria-botoes-links);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.termos a {
+    color: var(--cor-primaria-botoes-links);
+    text-decoration: none;
+}
+
+.termos a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria-hover-bordas);
+}
+
+.termos label {
+    font-family: var(--font-secundaria-textos);
+    color: var(--cor-texto-principal);
+}
+
+.ret_login {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ret_login a {
+    color: var(--cor-primaria-botoes-links);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.ret_login a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria-hover-bordas);
 }

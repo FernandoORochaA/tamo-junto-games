@@ -5,8 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Cadastro:</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/img/logo_favicon.png"/>
 </head>
 <body>
     <header>
@@ -15,22 +16,30 @@
     <main class="cadastro">
         <div class="login_img login_img--left"></div>
         <section class="cadastro_inicio">
+            <img class="logo_img_formulario" src="assets/img/Teste novo logo.png" alt="TamoJuntoGames" />
             <h1 class="cadastro_titulo">Crie sua conta</h1>
             <form action="" method="post">
                 <div class="formulario">
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" autocomplete="name" class="formulario_criar" placeholder="Digite seu nome completo" required/>
-                    <label for="apelido">Apelido - Nome a ser exibido no perfil</label>
-                    <input type="text" id="apelido" name="apelido" autocomplete="nickname" class="formulario_criar" placeholder="Nome a ser exibido no perfil" required />
+                    <input type="text" id="nome" name="nome" autocomplete="name" class="formulario_criar" placeholder="Seu nome" required/>
+                    <label for="apelido">Apelido</label>
+                    <input type="text" id="apelido" name="apelido" autocomplete="nickname" class="formulario_criar" placeholder="Como quer ser chamado" required />
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" autocomplete="email" class="formulario_criar" placeholder="Digite seu email" required/>
+                    <input type="email" id="email" name="email" autocomplete="email" class="formulario_criar" placeholder="seuemail@exemplo.com" required/>
                     <label for="confirmar_email">Confirmar email</label>
-                    <input type="email" id="confirmar_email" name="confirmar_email" autocomplete="off" class="formulario_criar" placeholder="Confirme seu email" required/>
+                    <input type="email" id="confirmar_email" name="confirmar_email" autocomplete="off" class="formulario_criar" placeholder="Repita o email" required/>
                     <label for="senha">Digite sua senha</label>
-                    <input type="password" id="senha" name="senha" autocomplete="new-password" class="formulario_criar" placeholder="Digite sua senha" required/>
+                    <input type="password" id="senha" name="senha" autocomplete="new-password" class="formulario_criar" placeholder="No mínimo 8 caracteres" required/>
                     <label for="confirmar_senha">Confirmar senha</label>
-                    <input type="password" id="confirmar_senha" name="confirmar_senha" autocomplete="off" class="formulario_criar" placeholder="Confirme sua senha" required/>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" autocomplete="off" class="formulario_criar" placeholder="Repita a senha" required/>
+                    <div class="termos">
+                        <input type="checkbox" id="aceito" name="aceito" required>
+                        <label for="aceito">Eu li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Politica de Privacidade</a>.</label>
+                    </div>
                     <button type="submit" class="formulario_criar_botao">Concluir</button>
+                    <p class="ret_login">
+                        Já tem uma conta? <a href="index.html">Faça login.</a>
+                    </p>
                 </div>
             </form>
         </section>
