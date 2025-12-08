@@ -12,20 +12,21 @@ O projeto está em fase inicial de desenvolvimento e está servindo como base pr
 
 ---
 
-## 🚧 Status do projeto
-> ⚠️ Projeto em desenvolvimento
-  - 📌 Fase atual
-    > ✅ Estrutura inicial do front-end (telas de cadastro e login)
-    > ✅ Criação dos primeiros endpoints da API (em outro repositório)
-    > ⏳ Conectar front-end com API
-    > ⏳ Criar banco de dados
-    
-  - 🎯 Planos futuros
-    > Gerenciar lista de jogos (wishlist / jogando / zerados)
-    > Sistema de avaliação e comentários
-    > Perfil de usuário
-    > Amizades e comparação de bibliotecas
-    > Comparador de preços e lojas digitais
+## 🏗️ Status do projeto
+🔧 Projeto em desenvolvimento
+
+### 📌 Fase atual
+- ✔️ Estrutura inicial do front-end (telas de cadastro e login)  
+- ✔️ Criação dos primeiros endpoints da API (em outro repositório)  
+- 🔄 Conectar front-end com API  
+- 🧱 Criar banco de dados  
+
+### 🎯 Planos futuros
+- 📚 Gerenciar lista de jogos (wishlist / jogando / zerados)  
+- ⭐ Sistema de avaliação e comentários  
+- 👤 Perfil de usuário  
+- 🤝 Amizades e comparação de bibliotecas  
+- 💲 Comparador de preços e lojas digitais  
 
 ---
 
